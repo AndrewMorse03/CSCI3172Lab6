@@ -2,7 +2,7 @@
 
 * *Date Created*: 12 Mar 2025
 * *Last Modification Date*: 14 Mar 2025
-* *Lab URL*: <http://example.com/>
+* *Lab URL*: <https://csci31712lab6.netlify.app/>
 * *Git URL*: https://git.cs.dal.ca/amorse/csci3172/-/tree/main/labs/lab6/lab6?ref_type=heads
 
 
@@ -23,53 +23,57 @@ Andrew Morse (amorse@dal.ca) - Developer
 
 ## Sources Used
 
-If in completing your lab / assignment / project you used any interpretation of someone else's code, then provide a list of where the code was implemented, how it was implemented, why it was implemented, and how it was modified. See the sections below for more details.
 
+### Home.js
 
-### File Name
-
-*Lines ## - ##*
+*Lines 11 - 15*
 
 ```
-Copy and paste your code on lines mentioned 
+var link = "mailto:amorse@dal.ca"
+            + "&subject=" + encodeURIComponent(`${subject} - Portfolio Inquiry`)
+            + "&body=" + encodeURIComponent(message);
 
-```
-
-The code above was created by adapting the code in [NAME](link) as shown below: 
-
-```
-Copy and paste the snippet of code you are referencing
+        window.location.href = link;
 
 ```
 
-- <!---How---> The code in [NAME](link) was implemented by...
-- <!---Why---> [NAME](link)'s Code was used because...
-- <!---How---> [NAME](link)'s Code was modified by...
-
-*Repeat as needed*
-
-
-### File Name
-
-*Lines ## - ##*
+The code above was created by adapting the code in [stack overflow](https://stackoverflow.com/questions/271171/sending-emails-with-javascript) as shown below: 
 
 ```
-Copy and paste your code on lines mentioned 
+var link = "mailto:me@example.com"
+             + "?cc=myCCaddress@example.com"
+             + "&subject=" + encodeURIComponent("This is my subject")
+             + "&body=" + encodeURIComponent(document.getElementById('myText').value)
+    ;
+    
+    window.location.href = link;
 
 ```
 
-The code above was created by adapting the code in [NAME](link) as shown below: 
+I didn't know how to implement a mailto link that could be used in a contact form. I had to look up the proper syntax to implement this functionality. I knew that I wanted to do something like this but didn't have the words to execute my vision. This is why I consulted this source.
+
+
+### About.css
+
+*Lines 12 - 14*
 
 ```
-Copy and paste the snippet of code you are referencing
+li {
+    list-style-position: inside;
+}
 
 ```
 
-- <!---How---> The code in [NAME](link) was implemented by...
-- <!---Why---> [NAME](link)'s Code was used because...
-- <!---How---> [NAME](link)'s Code was modified by...
+The code above was created by adapting the code in [stack overflow](https://stackoverflow.com/questions/58191973/center-aligning-an-unordered-list-with-bullets-in-bootstrap) as shown below: 
 
-*Repeat as needed*
+```
+li {
+    list-style-position: inside;
+}
+
+```
+
+I needed help styling my list elements to fit the aesthetic of my website. This helped me to properly align them to look the best on my about me page.
 
 
 
