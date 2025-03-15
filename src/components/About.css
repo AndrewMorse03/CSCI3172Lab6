@@ -1,0 +1,14 @@
+@media screen and (max-width:900px) {
+    #contentDiv {
+        flex-direction: column !important;
+        align-items: center;
+    }
+
+    #contentDiv div {
+        width: 90%;
+    }
+}
+
+li {
+    list-style-position: inside;
+}

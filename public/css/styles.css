@@ -1,0 +1,12 @@
+.w-40 {
+    width: 40%
+}
+
+.h-10 {
+    max-height: fit-content;
+    min-height: 10vh;
+}
+
+.nav-link:focus {
+    text-decoration: underline !important;
+}
